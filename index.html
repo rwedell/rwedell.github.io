@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ryan Wedell</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <!--leaflet css and js-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="ryan-container"><img src="image/profile.jpg" alt="ryan"></div>
+        
+        <hr/>
+        <div class = "main">
+            <h1 id = "name">ryan wedell</h1>
+            <h2 id = "address">1613 E 14th St Chattanooga, TN</h2>
+            <h2 id = "contact">(512) 350-1431 · rcwedell@gmail.com · resume</h2>
+        </div>
+        <hr/>
+        <div class="us-map-container">
+            <div id="mapid-uno"></div>
+            <div id="us-map-text">
+                <h3>
+                    Here's some of the places I've lived, worked, and spend time in the US. Click on a 
+                    pop up for just a little more specific info on each one.
+                </h3>
+            </div>
+        </div>
+        <div class="africa-map-container">
+            <div id="africa-map-text">
+                <h3>
+                    I had to make a second map because my PeaceCorp home wsa too far away. I worked and lived in Ebolowa, Cameroon
+                    for two years. It was one of the best experiences of my life.
+                </h3>
+            </div>
+            <div id="mapid-dos"></div>
+        </div>
+        
+       
+        
+    </body>
+    <script>
+        var mapboxAccessToken = 'pk.eyJ1IjoicndlZGVsbCIsImEiOiJjam5xMHhucWgwcDV4M2tuNXB5cXB2czF4In0.O8eQs2HM2dUjcBo8iWKx8g';
+
+        //places i've lived in the US map
+        var map = L.map('mapid-uno', {center:[32.97, -90.46], zoom:5});
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
+        id: 'mapbox.light'}).addTo(map);
+        L.marker([29.76464, -95.365554]).bindPopup("Here's where I'm originally from").addTo(map);
+        L.marker([30.35611, -97.73094]).bindPopup("I grew up and lived in<br>Austin after AmeriCorp").addTo(map);
+        L.marker([27.71321, -97.32559]).bindPopup("A&M Corpus Christi is where I<br>went to undergrad").addTo(map);
+        L.marker([30.42041, -87.83017]).bindPopup("I was an AmeriCorp volunteer <br>in Fairhope, AL").addTo(map);
+        L.marker([35.04594, -85.30946]).bindPopup("I'm currently living here in Chattanooga<br>working and going to school").addTo(map);
+        
+
+        //cameroon map
+        var map2 = L.map('mapid-dos', {center:[4.758, 12.256], zoom:4});
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
+        id: 'mapbox.light'}).addTo(map2);
+        L.marker([2.94156, 11.12148]).bindPopup("Actually I lived in a little village<br>outside Ebolowa called Ngalane").addTo(map2);
+    </script>
+</html>

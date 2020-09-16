@@ -1,0 +1,70 @@
+/*profile picture*/
+#ryan-container {
+    margin-left: 12.5%;
+    height: 120px;
+    width: 120px;
+    border-radius: 25%;
+    border: 2px solid black;
+}
+#ryan-container img {
+    width: auto;
+    height: 100%;
+    border-radius: 25%;
+}
+
+/*main header*/
+.main {
+    margin: 1em;
+    text-align: center;
+    color: black;
+    line-height: 20px;
+    /*border: 2px solid black;*/
+    font-family: 'Roboto'
+}
+
+hr {
+    width: 75%; 
+    margin-top: 2em;
+}
+
+/*maps*/
+.us-map-container {
+    display: flex;
+    width: 75%;
+    margin: auto;
+}
+#mapid-uno {
+    flex-grow: 4;
+    border: 2px solid black;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    border: 2px solid black;
+    height: 400px; 
+    width: 400px;
+    
+}
+#us-map-text {
+    flex-grow: 1;
+    width: 12.5%;
+}
+
+.africa-map-container {
+    display: flex;
+    width: 75%;
+    margin: auto;
+}
+#mapid-dos {
+    flex-grow: 4;
+    border: 2px solid black;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    border: 2px solid black;
+    height: 400px; 
+    width: 400px;
+    
+}
+#africa-map-text {
+    flex-grow: 1;
+    width: 12.5%;
+}
+
