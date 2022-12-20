@@ -22,7 +22,7 @@ library(leaflet)
 ```{r echo = FALSE}
 map_us <- leaflet() %>%
   addProviderTiles(providers$CartoDB.Positron) %>%
-  setView(-90.46, 32.97, zoom = 5) %>%
+  setView(-90.70, 32.97, zoom = 5) %>%
   addMarkers(lng = -95.36555, lat = 29.76464, popup = "Here's where I'm originally from") %>%
   addMarkers(lng = -97.73094, lat = 30.35611, popup = "I grew up in Austin<br>and lived here after AmeriCorps") %>%
   addMarkers(lng = -97.32559, lat = 27.71321, popup = "Texas A&M Corpus Christi is where I<br>went to undergrad") %>%
