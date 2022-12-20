@@ -1,5 +1,5 @@
 ---
-title: "&nbsp;"
+title: "Pictures!"
 ---
 <center><h1>Pictures!</h1></center>
 
