@@ -17,6 +17,8 @@ Here's some of the places I've lived, worked, and spent time in the US. Click on
 library(leaflet)
 ```
 
+:::: {style="display: flex; width: 75%;"}
+
 ```{r echo = FALSE}
 map_us <- leaflet() %>%
   addProviderTiles(providers$CartoDB.Positron) %>%
@@ -28,9 +30,13 @@ map_us <- leaflet() %>%
   addMarkers(lng = -85.30946, lat = 35.04594, popup = "I'm currently living here in Chattanooga,<br>also doing some other things")
 map_us
 ```
+::::
 
 <br>
+
 I had to make a second map because my Peace Corps home was too far away. I worked and lived in Ebolowa, Cameroon for two years. It was one of the best experiences of my life.
+
+:::: {style="display: flex; width: 75%;"}
 ```{r echo = FALSE}
 map_cam <- leaflet() %>%
   addProviderTiles(providers$CartoDB.Positron) %>%
@@ -38,3 +44,4 @@ map_cam <- leaflet() %>%
   addMarkers(lng = 11.12148, lat = 2.94156, popup = "Actually I lived in a little village<br>outside Ebolowa called Ngalane")
 map_cam
 ```
+::::
