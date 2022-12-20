@@ -6,7 +6,7 @@ title: "Projects"
 ### Fire Risk Model
 
 :::: {style="display: flex; width: 50%;"}
-![](./images/fire.png?display=inline-block)
+![dogs](./images/hs_and_bora.jpg){width="49%"}
 ::::
 
 :::: {style="display: flex;"}
@@ -18,7 +18,7 @@ I worked on this project as a part of our Chattalytics program in the Performanc
 ### Analyzing air quality with Hadoop and Spark
 
 :::: {style="display: flex; width: 50%;"}
-![dogs](./images/hs_and_bora.jpg){width="49%"}
+![](./images/hs_and_bora.jpg){width="49%"}
 ::::
 
 :::: {style="display: flex;"}
