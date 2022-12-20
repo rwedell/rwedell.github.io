@@ -1,0 +1,40 @@
+---
+title: "About"
+---
+
+Hello!
+
+I’m Ryan and I currently work for joe Coffee as a data analyst.
+
+In addition to data, maps, and visualization I also like biking around Chattanooga, going to CFC games, hiking, gaming, and reading. 
+
+<br>
+
+Here's some of the places I've lived, worked, and spent time in the US. Click on a pop up for just a little more specific info on each one.
+
+
+```{r include = FALSE}
+library(leaflet)
+```
+
+```{r echo = FALSE}
+map_us <- leaflet() %>%
+  addProviderTiles(providers$CartoDB.Positron) %>%
+  setView(-90.46, 32.97, zoom = 5) %>%
+  addMarkers(lng = -95.36555, lat = 29.76464, popup = "Here's where I'm originally from") %>%
+  addMarkers(lng = -97.73094, lat = 30.35611, popup = "I grew up in Austin<br>and lived here after AmeriCorps") %>%
+  addMarkers(lng = -97.32559, lat = 27.71321, popup = "Texas A&M Corpus Christi is where I<br>went to undergrad") %>%
+  addMarkers(lng = -87.83017, lat = 30.42041, popup = "I was an AmeriCorps volunteer <br>in Fairhope, AL") %>%
+  addMarkers(lng = -85.30946, lat = 35.04594, popup = "I'm currently living here in Chattanooga,<br>also doing some other things")
+map_us
+```
+
+<br>
+I had to make a second map because my Peace Corps home was too far away. I worked and lived in Ebolowa, Cameroon for two years. It was one of the best experiences of my life.
+```{r echo = FALSE}
+map_cam <- leaflet() %>%
+  addProviderTiles(providers$CartoDB.Positron) %>%
+  setView(12.256, 4.758, zoom = 5) %>%
+  addMarkers(lng = 11.12148, lat = 2.94156, popup = "Actually I lived in a little village<br>outside Ebolowa called Ngalane")
+map_cam
+```

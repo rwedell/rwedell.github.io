@@ -1,0 +1,8 @@
+---
+title: "&nbsp;"
+---
+<center><h1>Pictures!</h1></center>
+
+![dogs](./images/hs_and_bora.jpg){width="49%"}
+![cats](./images/normandnova.jpg){width="49%"}
+
