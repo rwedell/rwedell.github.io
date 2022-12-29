@@ -4,7 +4,7 @@ title: "About"
 
 Hello!
 
-I’m Ryan and I currently work for joe Coffee as a data analyst.
+I’m Ryan and I currently work for [joe Coffee](https://joe.coffee/) as a data analyst.
 
 In addition to data, maps, and visualization I also like biking around Chattanooga, going to CFC games, hiking, gaming, and reading. 
 
