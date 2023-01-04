@@ -3,6 +3,20 @@ title: "Projects"
 ---
 <br>
 
+### MSDA Capstone Project
+
+:::: {style="display: flex; width: 50%;"}
+![](./images/growth_models.jpg?display=inline-block)
+::::
+
+:::: {style="display: flex;"}
+If you're ready for some real excitement, and real excitement to you is reading grad school capstone projects about data analysis and COVID modeling, THEN YOU ARE IN LUCK. I worked on this project for 
+credit as part of my masters degree at UTC. It was actually a little interesting and fun to work on too though. The gist of it was creating different models, visualizing how different strains of 
+COVID spread in different parts of the world, and measuring the differences and similarities. <a href="https://drive.google.com/file/d/16UtybzUkMNphw0nW_DzI7nYSmxf-9M8t/view?usp=share_link" target="_blank">Here's a link to the final project paper</a>. I did this data analysis in python mostly using pandas for data stuff and plotly for visualizations. <a href="https://github.com/rwedell/covid" target="_blank">Here are the notebooks</a>.
+::::
+
+<br>
+
 ### Fire Risk Model
 
 :::: {style="display: flex; width: 50%;"}
